@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>منيو المطعم</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero" id="hero"><div class="hero-in"><div class="logo" id="logo">🍽️</div><div><h1 id="name"></h1><p id="tagline"></p></div></div></header>
+<main class="wrap">
+  <div class="info" id="info"></div>
+  <div class="actions" id="actions"></div>
+  <div class="demo-note" id="demoNote" hidden>⚠️ هذه وجبات وأسعار تجريبية للعرض فقط، ويمكن لصاحب المطعم تعديلها من <a href="admin.html" style="color:var(--p)">لوحة التحكم</a>.</div>
+  <div class="demo-note" id="closedNote" hidden>🔒 المطعم مغلق حاليًا ولا يستقبل الطلبات.</div>
+  <div class="sticky"><input class="search" id="q" type="search" placeholder="ابحث عن وجبة..." aria-label="بحث"><div class="cats" id="cats"></div></div>
+  <div id="menu"></div>
+</main>
+<div class="cartbar" id="cartbar" hidden><button class="btn" id="openCart"><span>🛒 عرض السلة (<b id="cn">0</b>)</span><span id="ct"></span></button></div>
+<dialog id="dItem"></dialog>
+<dialog id="dCart"></dialog>
+<script src="store.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
